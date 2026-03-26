@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <!-- ══ NAVBAR ══ -->
+<nav class="site-nav">
+  <a href="#" class="site-logo">Rise<span>Together</span></a>
+  <ul class="nav-menu">
+    <li><a href="#" class="active" onclick="showPage('home', this); return false;">Home</a></li>
+    <li><a href="#" onclick="showPage('about', this); return false;">About</a></li>
+    <li><a href="#" onclick="showPage('contact', this); return false;">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ---------------Home Page--------- -->
+
+<div class="page active" id="home">
+ 
+  <!-- Hero -->
+  <div class="hero-section">
+    <div class="hero-left">
+      <p class="eyebrow">✦ Making a Difference</p>
+      <h1 class="hero-title">Light for <em>every</em><br>human soul.</h1>
+      <p class="hero-desc">Risetogether is a global charity dedicated to lifting communities out of poverty, bringing clean water, education, and hope to those who need it most.</p>
+      <div>
+        <a href="#" class="btn-moss" onclick="showPage('contact', document.querySelectorAll('.nav-menu a')[2]); return false;">Donate Now</a>
+        <a href="#" class="btn-ghost" onclick="showPage('about', document.querySelectorAll('.nav-menu a')[1]); return false;">Our Mission</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!-- <span class="hero-big-num">10M+</span> -->
+      <div class="stat-stack">
+        <div class="stat-card">
+          <div class="stat-num">10M+</div>
+          <div class="stat-lbl">Lives Touched Globally</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">120</div>
+          <div class="stat-lbl">Countries We Operate In</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">94%</div>
+          <div class="stat-lbl">Funds Go Directly to Aid</div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Causes — Bootstrap grid -->
+  <div class="causes-section">
+    <p class="eyebrow">✦ Our Causes</p>
+    <h2 class="section-h">Where your gift goes</h2>
+    <p class="section-sub">Every donation is directed to one of our core pillars of change.</p>
+    <div class="row g-3">
+      <!-- Clean Water -->
+    <div class="col-12 col-md-4">
+        <div class="cause-card">
+            <img src="./images/Clean-water.jpg" alt="Clean Water" class="cause-icon">
+            <div class="cause-card-body">
+            <h3>Clean Water</h3>
+            <p>Delivering safe drinking water to remote villages through sustainable well-building and filtration programs.</p>
+            </div>
+        </div>
+    </div>
+      <div class="col-12 col-md-4">
+        <div class="cause-card">
+    <img src="./images/education.jpg" alt="Clean Water" class="cause-icon">
+    <div class="cause-card-body">
+      <h3>Education</h3>
+      <p>Building schools, training teachers, and providing scholarships so every child can access quality learning.</p>
+    </div>
+  </div>
+</div>
+      <div class="col-12 col-md-4">
+  <div class="cause-card">
+    <img src="./images/food.jpg" alt="Clean Water" class="cause-icon">
+    <div class="cause-card-body">
+      <h3>Food Security</h3>
+      <p>Supporting local farmers and food banks to eliminate hunger and create long-term nutritional stability.</p>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+ 
+</div>
+ 
+<!-----------About Page---------->
+
+<div class="page" id="about">
+ 
+  <div class="about-banner">
+    <h1>We believe in the <em>dignity</em> of every human being.</h1>
+    <p>Founded in 2008, RiseTogether has grown from a small grassroots movement into a globally recognised charity. Our work is rooted in compassion, transparency, and measurable impact.</p>
+  </div>
+ 
+  <!-- Story — Bootstrap grid -->
+  <div class="about-body">
+    <div class="row g-5 align-items-center">
+      <div class="col-12 col-md-5">
+        <div class="about-img-block">
+          <img src="./images/girl.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="about-text">
+          <h2>A mission born from purpose</h2>
+          <p>Our founder, Sok Reakksaa, witnessed the devastating effects of extreme poverty during her work as a field physician. She returned home with one conviction: that systemic change required sustained, community-led effort — not charity tourism.</p>
+          <p class="mt-3">Today, RiseTogether partners with over 400 local organisations across 120 countries. We don't impose solutions; we amplify the voices of those who already know what their communities need.</p>
+          <div class="mt-4">
+            <div class="value-item">
+              <div class="value-dot"></div>
+              <div>
+                <strong>Transparency</strong>
+                <span>Annual audited reports publicly available. 94% of every dollar reaches those in need.</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-dot"></div>
+              <div>
+                <strong>Community-First</strong>
+                <span>Solutions designed with — never for — the communities we serve.</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-dot"></div>
+              <div>
+                <strong>Long-Term Thinking</strong>
+                <span>We invest in infrastructure and education so change outlasts our presence.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Team — Bootstrap grid -->
+  <div class="team-section">
+    <p class="eyebrow">✦ Our People</p>
+    <h2 class="section-h">The faces behind the mission</h2>
+    <p class="section-sub">A diverse team united by one purpose.</p>
+    <div class="row g-3 mt-1">
+      <div class="col-12 col-md-4">
+        <div class="team-card">
+          <img src="./images/Me-Reaksa.jpg" alt="">
+          <div class="team-info">
+            <h4>Noeb Sokreakksa</h4>
+            <span>Founder & Executive Director</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+         <div class="team-card">
+          <img src="./images/Vichea.jpg" alt="">
+          <div class="team-info">
+            <h4>Sok Sokvichea</h4>
+            <span>Head of Field Operations</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+         <div class="team-card">
+          <img src="./images/Seanghun.jpg" alt="">
+          <div class="team-info">
+            <h4>Thon Seanghun</h4>
+            <span>Director of Partnerships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+ 
+<!-----------Contact---------->
+<div class="page" id="contact">
+  <div class="contact-wrapper">
+ 
+    <div class="contact-panel">
+      <h1>Let's create <em>change</em> together.</h1>
+      <p>Whether you want to donate, volunteer, partner with us, or simply learn more — we'd love to hear from you.</p>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div class="info-text">
+          <strong>Address</strong>
+          <span>Toul Sangkar1, Khan Russey Keo, Phnom Penh, Cambodia.</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div class="info-text">
+          <strong>Email</strong>
+          <span>hello@risetogethercharity.org</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div class="info-text">
+          <strong>Phone</strong>
+          <span>+885 332 556 778</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Form — Bootstrap row for two-col name fields -->
+    <div class="contact-form-panel">
+      <h2>Send us a message</h2>
+      <div class="form-success" id="formSuccess">✓ Thank you! We'll be in touch within 2 business days.</div>
+ 
+      <form onsubmit="handleSubmit(event)">
+        <div class="row g-2 mb-0">
+          <div class="col-12 col-sm-6">
+            <label class="field-label">First Name</label>
+            <input type="text" class="field-control" placeholder="Pheaktra" required />
+          </div>
+          <div class="col-12 col-sm-6">
+            <label class="field-label">Last Name</label>
+            <input type="text" class="field-control" placeholder="Chan" required />
+          </div>
+        </div>
+ 
+        <label class="field-label">Email</label>
+        <input type="email" class="field-control" placeholder="chanpheaktra@gmail.com" required />
+ 
+        <label class="field-label">How can we help?</label>
+        <select class="field-control">
+          <option value="">Select a topic…</option>
+          <option>Make a Donation</option>
+          <option>Volunteer with Us</option>
+          <option>Corporate Partnership</option>
+          <option>Press & Media</option>
+          <option>General Enquiry</option>
+        </select>
+ 
+        <label class="field-label">Message</label>
+        <textarea class="field-control" placeholder="Tell us a bit more…"></textarea>
+ 
+        <button type="submit" class="btn-moss w-100">Send Message</button>
+      </form>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<script>
+  function showPage(id, linkEl) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+    if (linkEl) linkEl.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+ 
+  function handleSubmit(e) {
+    e.preventDefault();
+    const box = document.getElementById('formSuccess');
+    box.style.display = 'block';
+    e.target.reset();
+    setTimeout(() => box.style.display = 'none', 6000);
+  }
+</script>
+ 
+    
+</body>
+</html>
